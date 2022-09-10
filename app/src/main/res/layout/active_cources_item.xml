@@ -5,10 +5,10 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_marginBottom="20dp"
-    android:background="#625B39"
     app:cardCornerRadius="30dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/MainConstraintLayout"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:background="#625B39"
@@ -35,10 +35,10 @@
             android:text="@string/booked_for"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/title2" />
+            app:layout_constraintTop_toBottomOf="@+id/titleTop" />
 
         <TextView
-            android:id="@+id/title2"
+            android:id="@+id/titleTop"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="25dp"
@@ -58,37 +58,39 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_oval_inside" />
+            android:src="@drawable/ic_oval_inside" />
+
+ <com.google.android.material.progressindicator.CircularProgressIndicator
+     android:id="@+id/indicator"
+     android:layout_width="40dp"
+     android:layout_height="40dp"
+     android:layout_marginEnd="16dp"
+     android:indeterminate="false"
+     app:trackThickness="2dp"
+     app:layout_constraintBottom_toBottomOf="parent"
+     app:layout_constraintEnd_toEndOf="parent"
+     app:layout_constraintTop_toTopOf="parent"
+     android:src="@drawable/ic_oval_outside"/>
 
         <ImageView
-            android:id="@+id/playButtonOvalOutside"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginEnd="20dp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_oval_outside" />
-
-        <ImageView
-            android:id="@+id/imageView"
+            android:id="@+id/triangle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintBottom_toBottomOf="@+id/playButtonOvalInside"
             app:layout_constraintEnd_toEndOf="@+id/playButtonOvalInside"
             app:layout_constraintStart_toStartOf="@+id/playButtonOvalInside"
             app:layout_constraintTop_toTopOf="@+id/playButtonOvalInside"
-            app:srcCompat="@drawable/ic_triangle" />
+            android:src="@drawable/ic_triangle" />
 
         <ImageView
-            android:id="@+id/imageView2"
+            android:id="@+id/iconInside"
             android:layout_width="31dp"
             android:layout_height="31dp"
             app:layout_constraintBottom_toBottomOf="@+id/icon"
             app:layout_constraintEnd_toEndOf="@+id/icon"
             app:layout_constraintStart_toStartOf="@+id/icon"
             app:layout_constraintTop_toTopOf="@+id/icon"
-            app:srcCompat="@drawable/profile_placeholder" />
+            android:src="@drawable/profile_placeholder" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

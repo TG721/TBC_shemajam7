@@ -13,5 +13,5 @@ dependencyResolutionManagement {
         maven { url 'https://jitpack.io' }
     }
 }
-rootProject.name = "Android-TBC-Homework-14"
+rootProject.name = "Android-TBC-Shemajamebeli7"
 include ':app'

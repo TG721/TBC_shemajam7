@@ -1,9 +1,9 @@
-package com.example.android_tbc_homework_14.data.repository
+package com.example.android_tbc_shemajamebeli7.data.repository
 
-import com.example.android_tbc_homework_14.data.model.Items
-import com.example.android_tbc_homework_14.data.remote.MyApi
-import com.example.android_tbc_homework_14.domain.MyRepository
-import com.example.android_tbc_homework_14.utils.MyResponseState
+import com.example.android_tbc_shemajamebeli7.data.model.Items
+import com.example.android_tbc_shemajamebeli7.data.remote.MyApi
+import com.example.android_tbc_shemajamebeli7.domain.MyRepository
+import com.example.android_tbc_shemajamebeli7.utils.MyResponseState
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.Response

@@ -1,4 +1,4 @@
-package com.example.android_tbc_homework_14.ui
+package com.example.android_tbc_shemajamebeli7.ui
 
 import android.app.Application
 import android.os.Bundle
@@ -9,11 +9,11 @@ import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.example.android_tbc_homework_14.MainViewModel
-import com.example.android_tbc_homework_14.adapter.ActiveCourseAdapter
-import com.example.android_tbc_homework_14.adapter.NewCourseAdapter
-import com.example.android_tbc_homework_14.databinding.ActivityMainBinding
-import com.example.android_tbc_homework_14.utils.MyResponseState
+import com.example.android_tbc_shemajamebeli7.MainViewModel
+import com.example.android_tbc_shemajamebeli7.adapter.ActiveCourseAdapter
+import com.example.android_tbc_shemajamebeli7.adapter.NewCourseAdapter
+import com.example.android_tbc_shemajamebeli7.databinding.ActivityMainBinding
+import com.example.android_tbc_shemajamebeli7.utils.MyResponseState
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.launch
 import javax.inject.Inject

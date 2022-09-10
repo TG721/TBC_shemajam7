@@ -1,8 +1,8 @@
-package com.example.android_tbc_homework_14.di
+package com.example.android_tbc_shemajamebeli7.di
 
 import android.content.Context
-import com.example.android_tbc_homework_14.app.BaseApplication
-import com.example.android_tbc_homework_14.data.remote.MyApi
+import com.example.android_tbc_shemajamebeli7.app.BaseApplication
+import com.example.android_tbc_shemajamebeli7.data.remote.MyApi
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

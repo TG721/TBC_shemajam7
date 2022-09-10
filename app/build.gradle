@@ -9,7 +9,7 @@ android {
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.android_tbc_homework_14"
+        applicationId "com.example.android_tbc_shemajamebeli7"
         minSdk 26
         targetSdk 32
         versionCode 1

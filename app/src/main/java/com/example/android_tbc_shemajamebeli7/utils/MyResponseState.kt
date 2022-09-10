@@ -1,4 +1,4 @@
-package com.example.android_tbc_homework_14.utils
+package com.example.android_tbc_shemajamebeli7.utils
 
 sealed class MyResponseState<T>{
     data class Success<T>(val items: T) : MyResponseState<T>()

@@ -1,4 +1,4 @@
-package com.example.android_tbc_homework_14.adapter
+package com.example.android_tbc_shemajamebeli7.adapter
 
 import android.app.Application
 import android.graphics.Color
@@ -6,9 +6,9 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.android_tbc_homework_14.R
-import com.example.android_tbc_homework_14.data.model.ActiveCourse
-import com.example.android_tbc_homework_14.databinding.ActiveCourcesItemBinding
+import com.example.android_tbc_shemajamebeli7.R
+import com.example.android_tbc_shemajamebeli7.data.model.ActiveCourse
+import com.example.android_tbc_shemajamebeli7.databinding.ActiveCourcesItemBinding
 
 class ActiveCourseAdapter(private var Courses: List<ActiveCourse>, private val AppContext: Application)
     : RecyclerView.Adapter<RecyclerView.ViewHolder>(){

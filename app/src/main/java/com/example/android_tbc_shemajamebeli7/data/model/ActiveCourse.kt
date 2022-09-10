@@ -1,4 +1,4 @@
-package com.example.android_tbc_homework_14.data.model
+package com.example.android_tbc_shemajamebeli7.data.model
 
 data class ActiveCourse(
     val background_color_percent: String,

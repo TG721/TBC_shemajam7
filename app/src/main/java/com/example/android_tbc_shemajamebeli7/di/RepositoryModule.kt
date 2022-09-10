@@ -1,7 +1,7 @@
-package com.example.android_tbc_homework_14.di
+package com.example.android_tbc_shemajamebeli7.di
 
-import com.example.android_tbc_homework_14.data.repository.MyRepositoryImpl
-import com.example.android_tbc_homework_14.domain.MyRepository
+import com.example.android_tbc_shemajamebeli7.data.repository.MyRepositoryImpl
+import com.example.android_tbc_shemajamebeli7.domain.MyRepository
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn

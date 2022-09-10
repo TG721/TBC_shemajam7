@@ -1,6 +1,6 @@
-package com.example.android_tbc_homework_14.data.remote
+package com.example.android_tbc_shemajamebeli7.data.remote
 
-import com.example.android_tbc_homework_14.data.model.Items
+import com.example.android_tbc_shemajamebeli7.data.model.Items
 import retrofit2.Response
 import retrofit2.http.GET
 

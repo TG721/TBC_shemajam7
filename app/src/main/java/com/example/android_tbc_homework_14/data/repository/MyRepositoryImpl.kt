@@ -7,8 +7,9 @@ import com.example.android_tbc_homework_14.utils.MyResponseState
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.flow
 import retrofit2.Response
+import javax.inject.Inject
 
-class MyRepositoryImpl(
+class MyRepositoryImpl @Inject constructor(
     private val api: MyApi
 ) : MyRepository {
     override suspend fun doNetworkCall(): Flow<MyResponseState<Items>> = flow {
@@ -16,7 +17,7 @@ class MyRepositoryImpl(
             val response: Response<Items> = api.doNetworkCall()
             val body: Items? = response.body()
             if (response.isSuccessful && body != null) {
-                emit(MyResponseState.Success(body!!))
+                emit(MyResponseState.Success(body))
             } else {
                 emit(MyResponseState.Error(response.errorBody().toString()))
             }

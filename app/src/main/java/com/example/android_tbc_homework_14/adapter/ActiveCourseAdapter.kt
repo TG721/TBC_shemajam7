@@ -30,7 +30,7 @@ class ActiveCourseAdapter(private var Courses: List<ActiveCourse>, private val A
         fun bind(course: ActiveCourse){
             ActiveCourse.apply {
                 titleTop.text = AppContext.getString(R.string.booked_for, course.booking_time)
-                titleTransparent.text = course.booking_time
+                titleTransparent.text = AppContext.getString(R.string.booked_for, course.booking_time)
                 Glide.with(iconInside)
                     .load(course.image)
                     .into(iconInside)

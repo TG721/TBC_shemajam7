@@ -3,8 +3,6 @@ package com.example.android_tbc_homework_14.di
 import android.content.Context
 import com.example.android_tbc_homework_14.app.BaseApplication
 import com.example.android_tbc_homework_14.data.remote.MyApi
-import com.example.android_tbc_homework_14.data.repository.MyRepositoryImpl
-import com.example.android_tbc_homework_14.domain.MyRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -34,9 +32,4 @@ object AppModule {
             .build().create(MyApi::class.java)
     }
 
-    @Provides
-    @Singleton
-    fun provideMyRepository(api: MyApi): MyRepository {
-        return MyRepositoryImpl(api)
-    }
 }

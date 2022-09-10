@@ -1,15 +1,14 @@
 package com.example.android_tbc_homework_14
 
-import android.util.Log.d
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.example.android_tbc_homework_14.data.model.Items
 import com.example.android_tbc_homework_14.domain.MyRepository
 import com.example.android_tbc_homework_14.utils.MyResponseState
 import dagger.hilt.android.lifecycle.HiltViewModel
-import kotlinx.coroutines.flow.*
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
 import kotlinx.coroutines.launch
-import retrofit2.Response
 import javax.inject.Inject
 
 @HiltViewModel
@@ -21,7 +20,7 @@ class MainViewModel @Inject constructor(private val repository: MyRepository): V
     fun getInfo() {
         viewModelScope.launch {
             _myState.emit(MyResponseState.Loading())
-            var data = repository.doNetworkCall()
+            val data = repository.doNetworkCall()
             data.collect{
                 _myState.value = it
             }

@@ -69,8 +69,7 @@
      app:trackThickness="2dp"
      app:layout_constraintBottom_toBottomOf="parent"
      app:layout_constraintEnd_toEndOf="parent"
-     app:layout_constraintTop_toTopOf="parent"
-     android:src="@drawable/ic_oval_outside"/>
+     app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
             android:id="@+id/triangle"
